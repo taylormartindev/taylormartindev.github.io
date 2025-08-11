@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>About on </title>
+    <link>//localhost:1313/about/</link>
+    <description>Recent content in About on </description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 04 Aug 2025 21:29:00 -0400</lastBuildDate>
+    <atom:link href="//localhost:1313/about/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About Me</title>
+      <link>//localhost:1313/about/about/</link>
+      <pubDate>Mon, 04 Aug 2025 21:29:00 -0400</pubDate>
+      <guid>//localhost:1313/about/about/</guid>
+      <description>&lt;p&gt;Hello there! My name is Taylor Martin. I&amp;rsquo;m interested in all things that think, from computers, to people/animals, to &amp;lt;insert 3rd category when discovered&amp;gt;.&lt;/p&gt;&#xA;&lt;p&gt;I have worked in various Information Technology fields since 2010. Knowledge management, IT management, logistics tracking, boundary protection, penetration testing, etc. I&amp;rsquo;m also a big gamer, rock climber, mountain biker, imrov actor, joke teller, and whatever else is my hyper fixation for the week.&lt;/p&gt;&#xA;&lt;p&gt;But for the most part I just like to learn more about how to make cool stuff do fun things, and share that journey with others.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
