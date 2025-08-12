@@ -5,8 +5,9 @@ draft: false
 tags: ["markdown", "guide", "cheatsheet"]
 ---
 {{< details summary="Click here to view a list of useful markdown references. Mostly just a reference to help me with future posts, but I figured anyone might get some use out of it. I'll be updating this with any other cool markdown tricks I find. <br><br>" >}}
+<br><br>
 
-# Markdown 101
+# Markdown 101:
 
 This post is a live demonstration of what you can achieve with Markdown, the simple and elegant syntax for writing for the web. Everything you see here is written in a plain text `.md` file.
 
