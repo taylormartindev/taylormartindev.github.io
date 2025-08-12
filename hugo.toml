@@ -1,4 +1,4 @@
-baseURL = "https://taymarlortin.github.io/personal-blog/"
+baseURL = "https://taymarlortin.github.io/personal-blog"
 languageCode = "en-us"
 theme = "poison"
 pagination.pagerSize = 10
@@ -26,10 +26,10 @@ pluralizelisttitles = false   # removes the automatically appended "s" on sideba
         # Limit:        If the files should be listed, how many should be shown.
     menu = [
         
-        {Name = "About", URL = "personal-blog/about/", HasChildren = false},
+        {Name = "About", URL = "/about/", HasChildren = false},
                 # Example:
         # ... /content/posts/introducing-poison.md
-        {Name = "Posts", URL = "/personal-blog/posts/", Pre = "Recent", HasChildren = true, Limit = 5},
+        {Name = "Posts", URL = "/posts/", Pre = "Recent", HasChildren = true, Limit = 5},
             # Example of a list without a subheading or limit.
         {Name = "Project Tracker", URL = "projects/", HasChildren = false},
     ]
