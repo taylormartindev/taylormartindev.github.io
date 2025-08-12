@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog on </title>
-    <link>http://localhost:1313/personal-blog/tags/blog/</link>
+    <link>http://localhost:1313/tags/blog/</link>
     <description>Recent content in Blog on </description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 04 Aug 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/personal-blog/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>August 2025</title>
-      <link>http://localhost:1313/personal-blog/projects/25-08/</link>
+      <link>http://localhost:1313/projects/25-08/</link>
       <pubDate>Mon, 04 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/personal-blog/projects/25-08/</guid>
+      <guid>http://localhost:1313/projects/25-08/</guid>
       <description>&lt;p&gt;Projects worked on:&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Beginning Webdev in 2025</title>
-      <link>http://localhost:1313/personal-blog/posts/beginners-webdev/</link>
+      <title>Make your website earlier</title>
+      <link>http://localhost:1313/posts/beginners-webdev/</link>
       <pubDate>Mon, 04 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/personal-blog/posts/beginners-webdev/</guid>
-      <description>&lt;p&gt;There&amp;rsquo;s so many things that I wish I would have started sooner. The compounding impacts of picking up skills early can be difficult to grasp until later in life. Learning how to cook a decent meal before my 30s would have compounded into a much broader range of culinary interests. Figuring out how to break through social anxiety and make more friends in my early 20&amp;rsquo;s would have led to me having so many more interesting stories an exchanges in the places I&amp;rsquo;ve lived. Blogging, and, by extension, web development seems like one of those massive missed opportunities to have started far earlier in life. There&amp;rsquo;s so much useful routine in tracking your progress through a project, and there&amp;rsquo;s so much freedom in having just a little corner of the internet to post your random ideas and journeys to be able to show to anyone at any time, or just to have a little diary for yourself to reflect back on. That&amp;rsquo;s my intent with this little corner here, just a simple way for me to work on projects and keep track of what I&amp;rsquo;ve had to learn along the way. That way in a another 10 years, I won&amp;rsquo;t have to think about what the compounding impacts of this journey could have been; I&amp;rsquo;ll get to know them first hand.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/posts/beginners-webdev/</guid>
+      <description>&lt;p&gt;There&amp;rsquo;s so many things that I wish I would have started sooner. The compounding impacts of picking up skills early can be difficult to grasp until later in life. Learning how to cook a decent meal before my 30s would have compounded into a much broader range of culinary interests. Figuring out how to break through social anxiety and make more friends in my early 20&amp;rsquo;s would have led to me having so many more interesting stories and exchanges in the places I&amp;rsquo;ve lived. Blogging, and, by extension, web development seems like one of those massive missed opportunities to have started far earlier in life. There&amp;rsquo;s so much useful routine in tracking your progress through a project, and there&amp;rsquo;s so much freedom in having just a little corner of the internet to post your random ideas and journeys to be able to show to anyone at any time, or just to have a little diary for yourself to reflect back on. That&amp;rsquo;s my intent with this little corner here, just a simple way for me to work on projects and keep track of what I&amp;rsquo;ve had to learn along the way. That way in a another 10 years, I won&amp;rsquo;t have to think about what the compounding impacts of this journey could have been; I&amp;rsquo;ll get to know them first hand.&lt;/p&gt;</description>
     </item>
     <item>
       <title>July 2025</title>
-      <link>http://localhost:1313/personal-blog/projects/25-07/</link>
+      <link>http://localhost:1313/projects/25-07/</link>
       <pubDate>Fri, 04 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/personal-blog/projects/25-07/</guid>
+      <guid>http://localhost:1313/projects/25-07/</guid>
       <description>&lt;p&gt;Projects worked on:&lt;/p&gt;</description>
     </item>
   </channel>
