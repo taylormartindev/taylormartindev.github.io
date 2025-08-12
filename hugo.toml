@@ -1,4 +1,4 @@
-baseURL = "https://taymarlortin.github.io/personal-blog"
+baseURL = "https://taymarlortin.github.io/personal-blog/"
 languageCode = "en-us"
 theme = "poison"
 pagination.pagerSize = 10
