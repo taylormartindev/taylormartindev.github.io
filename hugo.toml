@@ -1,6 +1,7 @@
 baseURL = "https://taymarlortin.github.io/personal-blog/"
 languageCode = "en-us"
 theme = "poison"
+canonifyURLs = false
 pagination.pagerSize = 10
 pluralizelisttitles = false   # removes the automatically appended "s" on sidebar entries
 #ignoreLogs = ['warning-goldmark-raw-html']
