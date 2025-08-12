@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on </title>
+    <link>http://localhost:1313/personal-blog/projects/</link>
+    <description>Recent content in Projects on </description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 04 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/personal-blog/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>August 2025</title>
+      <link>http://localhost:1313/personal-blog/projects/25-08/</link>
+      <pubDate>Mon, 04 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/personal-blog/projects/25-08/</guid>
+      <description>&lt;p&gt;Projects worked on:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>July 2025</title>
+      <link>http://localhost:1313/personal-blog/projects/25-07/</link>
+      <pubDate>Fri, 04 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/personal-blog/projects/25-07/</guid>
+      <description>&lt;p&gt;Projects worked on:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>My project space</title>
+      <link>http://localhost:1313/personal-blog/projects/projects-space/</link>
+      <pubDate>Wed, 04 Jun 2025 21:29:00 -0400</pubDate>
+      <guid>http://localhost:1313/personal-blog/projects/projects-space/</guid>
+      <description>&lt;p&gt;Just a spot to keep track of anything I put some time into during the month. No time tracking or anything, just a vague measure of how many things I dabble in.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
