@@ -12,7 +12,7 @@
         {{ if or (.Site.Params.noSummary) (.Params.noSummary) }}
         {{ .Content }}
         {{ else }}
-        {{ .Summary }}
+        {{ .Content }}
         {{ if .Truncated }}
         <div class="read-more-link">
             <a href="{{ .RelPermalink }}">Read More…</a>
