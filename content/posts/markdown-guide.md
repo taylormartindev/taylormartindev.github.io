@@ -106,4 +106,6 @@ function add(a, b) {
 
 console.log(add(5, 10)); // Outputs: 15
 
+```
+
 {{< /details >}}
