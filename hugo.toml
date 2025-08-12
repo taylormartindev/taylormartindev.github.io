@@ -26,12 +26,12 @@ pluralizelisttitles = false   # removes the automatically appended "s" on sideba
         # Limit:        If the files should be listed, how many should be shown.
     menu = [
         
-        {Name = "About", URL = "/about/", HasChildren = false},
+        {Name = "About", URL = "content/about/", HasChildren = false},
                 # Example:
         # ... /content/posts/introducing-poison.md
-        {Name = "Posts", URL = "/posts/", Pre = "Recent", HasChildren = true, Limit = 5},
+        {Name = "Posts", URL = "/content/posts/", Pre = "Recent", HasChildren = true, Limit = 5},
             # Example of a list without a subheading or limit.
-        {Name = "Project Tracker", URL = "projects/", HasChildren = false},
+        {Name = "Project Tracker", URL = "/projects/", HasChildren = false},
     ]
 
     # Links to your socials.  Comment or delete any you don't need/use. 
