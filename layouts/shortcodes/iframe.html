@@ -1,0 +1,14 @@
+{{ $src := .Get "src" }}
+{{ $height := .Get "height" | default "760px" }}
+{{ $title := .Get "title" | default "Embedded content" }}
+
+<div class="embed-wrap" style="margin: 1.5em 0;">
+  <iframe
+    src="{{ $src }}"
+    title="{{ $title }}"
+    loading="lazy"
+    style="width: 100%; height: {{ $height }}; border: 1px solid var(--table-border-color, #515151); border-radius: 4px;"
+    sandbox="allow-scripts allow-same-origin">
+  </iframe>
+  <p style="margin-top: 0.5em;"><a href="{{ $src }}" target="_blank" rel="noopener">Open in a new tab &rarr;</a></p>
+</div>

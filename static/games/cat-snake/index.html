@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cat &amp; Cat-Lady Snake</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <h1>🐱 Cat &amp; Cat-Lady</h1>
+
+    <div class="hud">
+      <div class="stat">Cat-Lady Score: <span id="ladyScore">0</span></div>
+      <div class="stat">Cat Length: <span id="catLength">0</span></div>
+      <div class="stat final">Final Score: <span id="finalScore">0</span></div>
+      <div class="stat legend">
+        <span class="tag cat">Cat</span> Arrow Keys
+        &nbsp;•&nbsp;
+        <span class="tag lady">Cat-Lady</span> WASD
+      </div>
+    </div>
+
+    <div class="hud litter-legend-row">
+      <span class="litter-legend-label">Litter value by age:</span>
+      <span id="litterLegend" class="litter-legend"></span>
+    </div>
+
+    <div class="board-wrap">
+      <canvas id="board"></canvas>
+      <div id="overlay" class="overlay hidden">
+        <div class="overlay-inner">
+          <h2 id="overlayTitle">Game Over</h2>
+          <p id="overlayMsg"></p>
+          <button id="restartBtn">Play Again</button>
+        </div>
+      </div>
+    </div>
+
+    <p class="hint">
+      The Cat eats food to grow — its length is half your final score. It also drops litter
+      behind it as it moves. Litter starts fresh (green) and fades to aging (brown) and
+      expired (black) over time, worth fewer points the longer it sits — see the legend
+      above. Steer the Cat-Lady over litter to sweep it up; whatever it's currently worth is
+      banked into her score for good, win or lose. The Cat still can't survive running into
+      litter, so don't let it pile up.
+    </p>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
