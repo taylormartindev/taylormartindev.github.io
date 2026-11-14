@@ -247,4 +247,10 @@ export function drawTextUI(c, g) {
       break;
   }
   if (isMuted()) txt(c, 'MUTED', W - 4, H - 6, 8, '#aaaaaa', 'right');
+  // embedded in a page and not focused: keys would go to the page instead of the game
+  if (!isTouch() && typeof document.hasFocus === 'function' && !document.hasFocus() && Math.floor(g.time * 1.5) % 2 === 0) {
+    c.fillStyle = 'rgba(0,0,0,0.75)';
+    c.fillRect(0, (H - 22) * S, W * S, 22 * S);
+    txt(c, 'CLICK THE GAME TO USE YOUR KEYBOARD', W / 2, H - 11, 12, '#ffe14d');
+  }
 }

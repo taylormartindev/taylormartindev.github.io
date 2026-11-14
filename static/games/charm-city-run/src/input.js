@@ -47,9 +47,13 @@ addEventListener('blur', () => { codesDown.clear(); pointerDown = false; });
 
 // toGame(clientX, clientY) -> {x, y} in game pixels
 export function bindPointer(el, toGame) {
+  el.tabIndex = 0; // focusable, so a click gives the game the keyboard (matters inside an <iframe>)
   el.addEventListener('pointerdown', (e) => {
     fireFirst();
-    e.preventDefault();
+    // Only block the default for touch (stops scrolling/zoom). For a mouse click the default is
+    // what moves keyboard focus into the game, so it must not be prevented.
+    if (e.pointerType !== 'mouse') e.preventDefault();
+    try { window.focus(); el.focus({ preventScroll: true }); } catch { /* ignore */ }
     tapPos = toGame(e.clientX, e.clientY);
     pointerDown = true;
     pressed.add('jump');

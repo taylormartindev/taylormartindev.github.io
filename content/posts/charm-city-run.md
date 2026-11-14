@@ -10,8 +10,8 @@ I've always liked the Chrome dinosaur game. Your wifi dies, a little pixel dino 
 
 So here's Charm City Run. You start out as a blue crab hopping along the Inner Harbor, and if you make it far enough you'll pick up a few other local characters along the way, each with their own neighborhood and their own little trick. There's a boss at the end of every level. The first one is a giant steamer pot, which felt right.
 
-It's plain JavaScript and canvas again, no frameworks, just pixel art and a game loop. Click the game first so it picks up your keyboard, then Space or Up to jump, Down to duck, and X or Shift for your special move. On a phone there are buttons on screen and a full-screen button that flips it to landscape.
+It's plain JavaScript and canvas again, no frameworks, just pixel art and a game loop. Space or Up jumps, Down ducks, and X or Shift does your special move. On a phone there are buttons on screen and a full-screen button that flips it to landscape.
 
 Give it a try below. I'd love to hear how far you get.
 
-{{< iframe src="/games/charm-city-run/index.html" height="560px" title="Charm City Run" >}}
+{{< play-card href="/games/charm-city-run/" image="/games/charm-city-run/cover.png" title="Charm City Run" label="Play Charm City Run" >}}

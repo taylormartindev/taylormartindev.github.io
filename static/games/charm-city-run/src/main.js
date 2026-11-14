@@ -454,6 +454,10 @@ window.__game = game; // handy for debugging in the console
 document.addEventListener('visibilitychange', () => {
   if (document.hidden && game.state === 'play') { game.setState('paused'); suspendAudio(); }
 });
+// keyboard focus left the game (e.g. clicked elsewhere on the page around an embed): pause
+addEventListener('blur', () => {
+  if (game.state === 'play' && !isTouch()) { game.setState('paused'); suspendAudio(); }
+});
 
 const DT = 1 / 60;
 let last = performance.now(), acc = 0;
@@ -469,4 +473,6 @@ function frame(now) {
   updateTouch(game);
   requestAnimationFrame(frame);
 }
+game.render(); // draw the first frame right away (no blank flash before the loop starts)
+updateTouch(game);
 requestAnimationFrame(frame);

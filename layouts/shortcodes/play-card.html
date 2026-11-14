@@ -1,0 +1,13 @@
+{{ $href := .Get "href" }}
+{{ $image := .Get "image" }}
+{{ $title := .Get "title" | default "Play" }}
+{{ $label := .Get "label" | default "Play" }}
+
+<div class="play-card" style="margin: 1.5em 0;">
+  <a href="{{ $href }}" target="_blank" rel="noopener" aria-label="{{ $label }}"
+     style="display: block; position: relative; border: 1px solid var(--table-border-color, #515151); border-radius: 4px; overflow: hidden; text-decoration: none;">
+    <img src="{{ $image }}" alt="{{ $title }}" style="display: block; width: 100%; height: auto; margin: 0; image-rendering: pixelated;">
+    <span style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); padding: 0.75em 1.4em; background: rgba(10, 10, 25, 0.88); border: 2px solid #f6c33b; border-radius: 6px; color: #fff; font-weight: bold; font-size: 1.15em; white-space: nowrap;">&#9654; {{ $label }}</span>
+  </a>
+  <p style="margin-top: 0.5em;">Opens the game full-window in a new tab.</p>
+</div>
