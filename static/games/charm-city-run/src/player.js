@@ -108,7 +108,8 @@ export class Player {
       g.burst(this.x + this.w / 2, this.y + 10, '#ffffff', 6, 50);
       g.boss?.onAbility?.();
     }
-    if (c.ability === 'double' && abilityPressed && !this.onGround) this.jumpBuf = 0.12;
+    // 2X JUMP / GLIDE buttons also jump from the ground (handy with just two touch buttons)
+    if ((c.ability === 'double' || c.ability === 'glide') && abilityPressed) this.jumpBuf = 0.12;
 
     // ----- jumping -----
     if (this.onGround) {
@@ -138,7 +139,7 @@ export class Player {
       }
     }
     // variable jump height: releasing early cuts the jump
-    if (this.canCut && !jumpHeld && !(c.ability === 'double' && abilityHeld) && this.vy < -140) {
+    if (this.canCut && !jumpHeld && !((c.ability === 'double' || c.ability === 'glide') && abilityHeld) && this.vy < -140) {
       this.vy = -140;
       this.canCut = false;
     }

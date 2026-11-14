@@ -115,7 +115,8 @@ function layoutFor(g) {
     case 'intro': return { left: [['back', 'MENU', 'small']], right: [['confirm', 'START', 'big']] };
     case 'play': {
       const label = g.player.c.label || (g.player.c.ability === 'double' ? '2X JUMP' : 'GLIDE');
-      return { left: [['duck', 'DUCK', 'big']], mid: [['pause', 'PAUSE', 'small']], right: [['ability', label], ['jump', 'JUMP', 'big']] };
+      // just two buttons while playing: ability under the left thumb, jump under the right
+      return { left: [['ability', label, 'big']], right: [['jump', 'JUMP', 'big']] };
     }
     case 'paused': return { left: [['back', 'QUIT']], mid: [['fullscreen', forced ? 'EXIT FULL' : 'FULL SCREEN', 'small'], ['mute', 'SOUND', 'small']], right: [['pause', 'RESUME', 'big']] };
     case 'gameover': return { left: [['back', 'MENU']], right: [['confirm', 'RETRY', 'big']] };
