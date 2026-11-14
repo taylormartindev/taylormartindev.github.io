@@ -1,7 +1,7 @@
 // Progress + high scores in localStorage (fails soft when storage is unavailable).
 const KEY = 'charm-city-run-v1';
 const N = 5;
-let data = { unlocked: 1, best: new Array(N).fill(0) };
+let data = { unlocked: 1, best: new Array(N).fill(0), hearts: 0 };
 
 try {
   const raw = localStorage.getItem(KEY);
@@ -10,6 +10,7 @@ try {
     if (d && typeof d.unlocked === 'number') {
       data.unlocked = Math.min(N, Math.max(1, d.unlocked | 0));
       if (Array.isArray(d.best)) data.best = data.best.map((_, i) => +d.best[i] || 0);
+      data.hearts = Math.max(0, Math.min(16, d.hearts | 0));
     }
   }
 } catch { /* ignore */ }
@@ -23,6 +24,9 @@ export const save = {
   best(i) { return data.best[i] || 0; },
   totalBest() { return data.best.reduce((a, b) => a + b, 0); },
   unlockAll() { data.unlocked = N; persist(); },
+  // hearts granted by a code (0 = use the config default)
+  get heartsOverride() { return data.hearts; },
+  setHearts(n) { data.hearts = Math.max(1, Math.min(16, n | 0)); persist(); },
   // returns true when this is a new best
   recordLevel(i, score) {
     let newBest = false;

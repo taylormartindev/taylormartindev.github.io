@@ -45,12 +45,12 @@ addEventListener('keydown', (e) => {
 addEventListener('keyup', (e) => { codesDown.delete(e.code); });
 addEventListener('blur', () => { codesDown.clear(); pointerDown = false; });
 
-export function bindPointer(el, gameW, gameH) {
+// toGame(clientX, clientY) -> {x, y} in game pixels
+export function bindPointer(el, toGame) {
   el.addEventListener('pointerdown', (e) => {
     fireFirst();
     e.preventDefault();
-    const r = el.getBoundingClientRect();
-    tapPos = { x: ((e.clientX - r.left) / r.width) * gameW, y: ((e.clientY - r.top) / r.height) * gameH };
+    tapPos = toGame(e.clientX, e.clientY);
     pointerDown = true;
     pressed.add('jump');
     pressed.add('tap');

@@ -1,6 +1,7 @@
 // Player physics shared by all characters, plus each character's unique ability.
 import { W, GROUND, R } from './consts.js';
 import { GAME, CHARACTERS } from './config.js';
+import { save } from './save.js';
 import { input } from './input.js';
 import { sfx } from './audio.js';
 import { SPR } from './sprites.js';
@@ -32,7 +33,7 @@ export class Player {
     this.y = GROUND - c.h;
     this.vy = 0;
     this.onGround = true;
-    this.maxHearts = Math.max(1, Math.min(16, GAME.startingHearts | 0));
+    this.maxHearts = Math.max(1, Math.min(16, save.heartsOverride || GAME.startingHearts | 0));
     this.hearts = this.maxHearts;
     this.armor = c.armor || 0;
     this.invuln = 0;

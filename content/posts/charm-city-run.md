@@ -6,22 +6,12 @@ tags: ["projects", "games", "javascript"]
 author: Taylor Martin
 ---
 
-You know the little dinosaur game Chrome shows you when the internet goes down? I wanted that, but Baltimore.
+I've always liked the Chrome dinosaur game. Your wifi dies, a little pixel dino shows up, and suddenly you've burned ten minutes jumping over cactuses. I wanted to make one of those, but about Baltimore.
 
-Charm City Run is a pixel-art side-scroller split into five levels, each with its own character, neighborhood, and a unique ability the level is built around:
+So here's Charm City Run. You start out as a blue crab hopping along the Inner Harbor, and if you make it far enough you'll pick up a few other local characters along the way, each with their own neighborhood and their own little trick. There's a boss at the end of every level. The first one is a giant steamer pot, which felt right. You also get a random Baltimore fact between levels, so you'll learn something whether you want to or not.
 
-- **Blue Crab** in the **Inner Harbor**: a scuttle dash that blasts through crab-pot traps and gull swarms.
-- **Utz Girl** in **Fells Point**: a slide to get under scaffolding that hangs too low to duck.
-- **Natty Boh Guy** in **Brewers Hill**: a mustache twirl that spins him up over keg towers too tall to jump.
-- **Oriole** at **Camden Yards**: a double jump for peanut stacks and light-rail gaps.
-- **Raven** at **Poe's Grave**: a glide across open graves too wide to jump.
+It's plain JavaScript and canvas again, no frameworks, just pixel art and a game loop. Click the game first so it picks up your keyboard, then Space or Up to jump, Down to duck, and X or Shift for your special move. On a phone there are buttons on screen and a full-screen button that flips it to landscape.
 
-Each level gets harder than the last and ends in a boss fight that leans on that character's ability: outrunning a giant steamer pot, chasing down a runaway chip truck, popping foam off a keg cannon, surviving a home run derby, and a "Nevermore" showdown with a giant quill. Every character also has their own theme song, and you get a random Baltimore fun fact after each level.
-
-**Controls:** Space/Up to jump, Down to duck, X or Shift for the ability, P to pause, M to mute. On a phone you get on-screen buttons instead (landscape plays best). Click the game first so it picks up your keys. There's also a code screen on the title (press C), if you happen to know any codes.
-
-Like my last game, it's plain JavaScript and HTML5 Canvas with no frameworks. All the art is drawn in code, and the music and sound effects are generated live with the Web Audio API. A `config.js` file holds the tuning (scroll speed, level length, gravity, hearts, how far the crab dashes, how high the mustache twirl goes) so I can rebalance it without touching the game logic.
-
-Give it a try below:
+Give it a try below. I'd love to hear how far you get.
 
 {{< iframe src="/games/charm-city-run/index.html" height="560px" title="Charm City Run" >}}

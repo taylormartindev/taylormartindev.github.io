@@ -10,7 +10,7 @@ import { TYPES, makeEntity } from './obstacles.js';
 import { makeBoss } from './bosses.js';
 import { Background } from './background.js';
 import { drawPixelUI, drawTextUI, cardAt } from './ui.js';
-import { updateTouch, isTouch, onCodeInput, focusCodeInput, clearCodeInput } from './touch.js';
+import { updateTouch, isTouch, onCodeInput, focusCodeInput, clearCodeInput, clientToGame } from './touch.js';
 import { nextFact } from './facts.js';
 import { save } from './save.js';
 import { GAME, CODES } from './config.js';
@@ -26,7 +26,7 @@ const ctx = buf.getContext('2d');
 ctx.imageSmoothingEnabled = false;
 
 onFirstInput(initAudio);
-bindPointer(display, W, H);
+bindPointer(display, (x, y) => clientToGame(x, y, W, H));
 // tapping the game while entering a code re-opens the phone keyboard
 display.addEventListener('click', () => { if (game.state === 'code' && isTouch()) focusCodeInput(false); });
 if (document.fonts && document.fonts.load) document.fonts.load('16px "Press Start 2P"').catch(() => {});
@@ -291,7 +291,8 @@ class Game {
       sfx.buzz();
       return;
     }
-    if (code.effect === 'unlockAll') save.unlockAll();
+    if (code.unlockAll) save.unlockAll();
+    if (code.hearts) save.setHearts(code.hearts);
     this.codeMsg = { text: code.message || 'CODE ACCEPTED!', ok: true, t: this.time };
     sfx.win();
   }

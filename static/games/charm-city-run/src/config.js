@@ -14,7 +14,7 @@ export const GAME = {
                                // (raise for more breathing room between jumps)
   bossDurationMultiplier: 1.0, // > 1 = longer bosses (more time / more keg hits needed)
   gravity: 1000,               // downward pull in px/s^2 (lower = floatier jumps)
-  startingHearts: 11,           // hearts at the start of each level (1-16)
+  startingHearts: 5,           // hearts at the start of each level (1-16); a code can raise this
   hurtInvulnTime: 1.4,         // seconds of invincibility after taking a hit
   collectiblePoints: 50,       // points per collectible
   foamPoints: 20,              // points per foam bubble popped in the Keg Cannon fight
@@ -72,7 +72,8 @@ export const CHARACTERS = {
 
 // ---------- Cheat codes ----------
 // Entered from the title screen (press C). Codes are case-insensitive.
-// Available effects: 'unlockAll'
+// Effects (combine any):  unlockAll: true  -> unlocks every level
+//                         hearts: N        -> start every level with N hearts (saved, 1-16)
 export const CODES = {
-  ILUVBALTIMORE: { effect: 'unlockAll', message: 'ALL LEVELS UNLOCKED, HON!' },
+  ILUVBALTIMORE: { unlockAll: true, hearts: 10, message: 'ALL LEVELS + 10 HEARTS, HON!' },
 };
